@@ -1,8 +1,8 @@
 allow_embedding: false
 dependencies: []
 metadata: {description: This app is a simple config generator for SAOS 10x. The use fills out a form and the app returns a config.}
-name: SAOS Config Gen
-package_name: SAOS_Config_Gen
+name: saosConfigGen
+package_name: saosConfigGen
 renamed: true
 runtime_options:
   client_version: '3'
