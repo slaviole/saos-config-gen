@@ -1,8 +1,8 @@
-from ._anvil_designer import out_of_band_mgmtTemplate
+from ._anvil_designer import OOB_MgmtTemplate
 from anvil import *
 import anvil.js  # Import the anvil.js module
 
-class out_of_band_mgmt(out_of_band_mgmtTemplate):
+class OOB_Mgmt(OOB_MgmtTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -12,7 +12,7 @@ class out_of_band_mgmt(out_of_band_mgmtTemplate):
   def submit_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.output_card.visible = True
-    
+
     oob_ip = self.ip_address.text
     oob_subnet = self.subnet_mask.text
     oob_gateway = self.default_gateway.text
@@ -31,6 +31,3 @@ class out_of_band_mgmt(out_of_band_mgmtTemplate):
 
     # (Optional) Provide feedback to the user.
     self.copy_button.text = "Copied! 👍"
-    
-
-    
